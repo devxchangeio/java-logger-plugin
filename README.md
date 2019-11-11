@@ -1,2 +1,2 @@
-# java-logger-plugin
-Java Logger Eclipse Plugin for Java Projects
+# oneclick-logger-plugin
+oneclick-logger-plugin

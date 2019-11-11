@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+  <extension point="org.eclipse.ui.popupMenus">
+       <viewerContribution id="io.oneclicklabs.eclipse.source"
+                           targetID="#CompilationUnitEditorContext">
+          <menu id="oneclick-logger.code.menu"
+                label="Log4j Code"
+                icon="icons/oneclicklabs_16x16.png"
+                path="additions"/>
+          <action class="io.oneclicklabs.logger.plugin.log4j.Log4jAction"
+                  icon="icons/log4j_32x32.png"
+                  id="oneclicklabs.log4j.method.action"
+                  label="Generate Log4j Method Statements"
+                  menubarPath="oneclick-logger.code.menu/additions"
+                  tooltip="Generates log4j statements for each method in the selected class"/>
+          <!--<action
+                class="io.oneclicklabs.logger.plugin.log4j.Log4jAction"
+                icon="icons/log.png"
+                id="oneclicklabs.log4j.action"
+                label="Generate Log4j Statement"
+                menubarPath="oneclick-logger.code.menu/additions"
+                tooltip="Generates a log4j statement for the selection">
+          </action>-->
+      </viewerContribution>
+   </extension>
+
+</plugin>
